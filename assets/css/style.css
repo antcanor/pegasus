@@ -327,7 +327,7 @@ header .navbar {
 
 .banner .text-content {
 	position: absolute;
-	top: 50%;
+	top: 35%;
 	transform: translateY(-50%);
 	text-align: center;
 	width: 100%;
@@ -342,7 +342,7 @@ header .navbar {
 }
 
 .banner .text-content h2 {
-	color: #fff;
+	color: #000000;
 	font-size: 62px;
 	text-transform: uppercase;
 	letter-spacing: 5px;
