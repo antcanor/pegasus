@@ -756,6 +756,10 @@ footer .inner-content p a {
 	background-color: #f7f7f7;
 	padding: 40px;
 }
+.service-item .icon img{
+	width: 100px;
+	height: 100px;
+}
 
 .service-item .icon i {
 	width: 100px;
@@ -771,6 +775,7 @@ footer .inner-content p a {
 .service-item .down-content {
 	background-color: #fff;
 	padding: 40px 30px;
+	min-height: 340px;
 }
 
 .service-item .down-content h4 {
@@ -785,6 +790,7 @@ footer .inner-content p a {
 
 .service-item .down-content p {
 	margin-bottom: 25px;
+	text-align: center;
 }
 
 .services-item-image { 
