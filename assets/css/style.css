@@ -107,7 +107,8 @@ a.filled-button:hover {
 #preloader {
   overflow: hidden;
   background-image: url("../images/preloader.png");
-  left: 0;
+  background-size: cover;
+  left: 0px;
   right: 0;
   top: 0;
   bottom: 0;
@@ -116,7 +117,7 @@ a.filled-button:hover {
   color: #fff;
 }
 
-#preloader .jumper {
+/* #preloader .jumper {
   left: 0;
   top: 0;
   right: 0;
@@ -160,7 +161,7 @@ a.filled-button:hover {
   100% {
     opacity: 0;
   }
-}
+} */
 
 
 /* Header Style */
