@@ -5,13 +5,14 @@ jQuery( document ).ready(function( $ ) {
 
         // Page loading animation
 
-        $("#preloader").animate({
-            'opacity': '0'
-        }, 600, function(){
-            setTimeout(function(){
+         // Esperar 500 milisegundos antes de iniciar el desvanecimiento
+         setTimeout(function(){
+            $("#preloader").animate({
+                'opacity': '0'
+            }, 500, function(){ // Desvanecer durante 1 segundo
                 $("#preloader").css("visibility", "hidden").fadeOut();
-            }, 300);
-        });
+            });
+        }, 750); // Esperar 0.75 segundos con el preloader completamente visible
         
 
         $(window).scroll(function() {
