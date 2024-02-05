@@ -20,6 +20,45 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/owl.css">
 
+    <style>
+      #form-submit
+      {
+        background-color: rgb(56, 187, 56);
+      }
+      #form-submit:hover
+      {
+        background-color: rgb(11, 126, 11);
+      }
+      #form-reset
+      {
+        background-color: rgb(204, 54, 54);
+      }
+      #form-reset:hover
+      {
+        background-color: rgb(158, 27, 27);
+      }
+    </style>
+
+<!-- <script>
+  const form = document.getElementById("#contact");
+  const nombre = document.getElementById("#name");
+  const correo = document.getElementById("#email");
+  const asunto = document.getElementById("#subject");
+  const mensaje = document.getElementById("#message");
+  
+  form.action = "mensaje.html"
+
+  form.addEventListener("submit", function()
+    {
+        if ((nombre = "") && (correo = "") && (asunto = "") && (mensaje = ""))
+            alert("Por favor, rellene todos los campos");
+        else
+        {
+            this.submit()
+        }
+
+    })
+</script> -->
   </head>
 
   <body>
@@ -38,35 +77,34 @@
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>PEGASUS</em></h2></a>
-
+          <a class="navbar-brand" href="index.html"><img src="assets/images/logof.png" alt="" width="60px"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home
+                    <a class="nav-link" href="index.html">Inicio
                       <span class="sr-only">(current)</span>
                     </a>
                 </li> 
 
-                <li class="nav-item"><a class="nav-link" href="cars.html">Cars</a></li>
+                <li class="nav-item"><a class="nav-link" href="cars.html">Coches</a></li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Más</a>
                     
                     <div class="dropdown-menu">
                       <a class="dropdown-item" href="blog.html">Blog</a>
-                      <a class="dropdown-item" href="team.html">Team</a>
+                      <a class="dropdown-item" href="team.html">Equipo</a>
                       <a class="dropdown-item" href="testimonials.html">Testimonials</a>
                       <a class="dropdown-item" href="terms.html">Terms</a>
                     </div>
                 </li>
 
-                <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="about-us.html">Sobre Nosotros</a></li>
                 
-                <li class="nav-item active"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                <li class="nav-item active"><a class="nav-link" href="contact.html">Contáctanos</a></li>
             </ul>
           </div>
         </div>
@@ -74,13 +112,13 @@
     </header>
 
     <!-- Page Content -->
-    <div class="page-heading contact-heading header-text" style="background-image: url(assets/images/heading-4-1920x500.jpg);">
+    <div class="page-heading contact-heading header-text" style="background-image: url(assets/images/contact-us.jpg);">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="text-content">
-              <h4>Lorem ipsum dolor</h4>
-              <h2>Contact Us</h2>
+              <h4>Más cercanos que nunca</h4>
+              <h2>Contáctanos</h2>
             </div>
           </div>
         </div>
@@ -93,7 +131,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>Our Location on Maps</h2>
+              <h2>Nuestra localización:</h2>
             </div>
           </div>
           <div class="col-md-8">
@@ -109,13 +147,12 @@
           </div>
           <div class="col-md-4">
             <div class="left-content">
-              <h4>About our office</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisic elit. Sed voluptate nihil eumester consectetur similiqu consectetur.<br><br>Lorem ipsum dolor sit amet, consectetur adipisic elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti.</p>
+              <h4>Sobre nuestra oficina</h4>
+              <p>Abiertos las 24 horas del día, los 7 días de la semana.<br><br>Esperando siempre con ganas a nuestros queridos clientes.</p>
               <ul class="social-icons">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                <li><a href="https://www.facebook.com/?locale=es_ES"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/home"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"><i class="fa fa-linkedin"></i></a></li>
               </ul>
             </div>
           </div>
@@ -129,36 +166,37 @@
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>Send us a Message</h2>
+              <h2>Déjanos un mensaje</h2>
             </div>
           </div>
           <div class="col-md-8">
             <div class="contact-form">
-              <form id="contact" action="" method="post">
+              <form id="contact" action="mensaje.html" method="post">
                 <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                      <input name="name" type="text" class="form-control" id="name" placeholder="Nombre y Apellidos" required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-12 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="email" type="text" class="form-control" id="email" placeholder="E-Mail Address" required="">
+                      <input name="email" type="text" class="form-control" id="email" placeholder="Correo electónico" required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-12 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="">
+                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Asunto" required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Tu mensaje" required=""></textarea>
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <button type="submit" id="form-submit" class="filled-button">Send Message</button>
+                      <button type="submit" id="form-submit" class="filled-button">Enviar mensaje</button>
+                      <button type="reset" id="form-reset" class="filled-button">Borrar información</button>
                     </fieldset>
                   </div>
                 </div>
@@ -166,9 +204,9 @@
             </div>
           </div>
           <div class="col-md-4">
-            <img src="assets/images/team_01.jpg" class="img-fluid" alt="">
+            <img src="assets/images/kevin.jpeg" class="img-fluid" alt="">
 
-            <h5 class="text-center" style="margin-top: 15px;">John Doe</h5>
+            <h5 class="text-center" style="margin-top: 15px;">Kevin Castillo</h5>
           </div>
         </div>
       </div>
@@ -179,7 +217,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="inner-content">
-              <p>Copyright © 2020 Company Name - Template by: <a href="https://www.phpjabbers.com/">PHPJabbers.com</a></p>
+              <p>Copyright © 2024 Pegasus - Template by: <a href="https://www.phpjabbers.com/">PHPJabbers.com</a></p>
             </div>
           </div>
         </div>
