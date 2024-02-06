@@ -272,6 +272,13 @@ header .navbar {
 
 
 /* Banner Style */
+#video {
+	height: 100vh;
+	width: 100vw;
+	object-fit: cover;
+  }
+  
+
 .banner {
 	position: relative;
 	text-align: center;
