@@ -277,7 +277,18 @@ header .navbar {
 	width: 100vw;
 	object-fit: cover;
   }
-  
+
+#botonSonido{
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	width: 32px;
+	height: 32px;
+	background-image: url(../images/volume-mute-fill.svg);
+	background-size: cover;
+	cursor: pointer;
+	z-index: 1;
+}
 
 .banner {
 	position: relative;
