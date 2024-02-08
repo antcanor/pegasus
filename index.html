@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/owl.css">
 
+    <!-- JAVAsCRIPT-->
+    <script defer type="text/javascript" src="assets/js/control_video.js"></script>
   </head>
 
   <body>
@@ -73,27 +75,13 @@
 
     <!-- Page Content -->
     <!-- Banner Starts Here -->
-    <div class="banner header-text">
-      <div class="owl-banner owl-carousel">
-        <div class="banner-item-01">
-          <div class="text-content">
-            <h2>Pegasus</h2>
-            <h3>roadster</h3>
-          </div>
-        </div>
-        <div class="banner-item-02">
-          <div class="text-content">
-            <h4>Fugiat Aspernatur</h4>
-            <h2>Laboriosam reprehenderit ducimus</h2>
-          </div>
-        </div>
-        <div class="banner-item-03">
-          <div class="text-content">
-            <h4>Saepe Omnis</h4>
-            <h2>Quaerat suscipit unde minus dicta</h2>
-          </div>
-        </div>
-      </div>
+    <div>
+      <video autoplay loop id="video">
+        <source src="assets/video/background.webm" type="video/webm">
+        <source src="assets/video/background.mp4" type="video/mp4">
+        Tu navegador no soporta este vídeo
+      </video>
+      <span id="botonSonido" onclick="toggleMute()"></span>
     </div>
     <!-- Banner Ends Here -->
 
