@@ -278,7 +278,7 @@ header .navbar {
 	object-fit: cover;
   }
 
-#botonSonido{
+/* #botonSonido{
 	position: absolute;
 	bottom: 10px;
 	left: 10px;
@@ -288,6 +288,37 @@ header .navbar {
 	background-color: white;
 	background-size: cover;
 	cursor: pointer;
+	z-index: 1;
+} */
+
+#botonSonido{
+	background-image: url(../images/volume-mute-fill.svg);
+	left: 42px;
+}
+
+#botonPausa{
+	background-image: url(../images/pause-fill.svg);
+	
+}
+
+.control-btn{
+	position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px 10px;
+    cursor: pointer;
+	width: 32px;
+	height: 32px;
+	background-size: cover;
+}
+
+#recuadroBotones{
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	background-color: grey;
+	opacity: 50%;
 	z-index: 1;
 }
 
