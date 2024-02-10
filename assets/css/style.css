@@ -278,7 +278,7 @@ header .navbar {
 	object-fit: cover;
   }
 
-#botonSonido{
+/* #botonSonido{
 	position: absolute;
 	bottom: 10px;
 	left: 10px;
@@ -288,6 +288,37 @@ header .navbar {
 	background-color: white;
 	background-size: cover;
 	cursor: pointer;
+	z-index: 1;
+} */
+
+#botonSonido{
+	background-image: url(../images/volume-up-fill.svg);
+	left: 42px;
+}
+
+#botonPausa{
+	background-image: url(../images/pause-fill.svg);
+	
+}
+
+.control-btn{
+	position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px 10px;
+    cursor: pointer;
+	width: 32px;
+	height: 32px;
+	background-size: cover;
+}
+
+#recuadroBotones{
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	background-color: grey;
+	opacity: 50%;
 	z-index: 1;
 }
 
@@ -598,9 +629,31 @@ footer .inner-content p a {
 
 
 /* Product Page */
-
+  
 .products {
-	margin-top: 100px;
+	margin-top: 0;
+	
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 100px 0px;
+}
+.products .product-item {
+  margin-bottom: 30px;
+  border: 10px solid #f1f1f1;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out; /* Añade una transición suave al transformar */
+}
+
+.products .product-item:hover {
+  transform: scale(1.05); /* Aumenta el tamaño del elemento en un 5% */
+}
+
+.products .down-content{
+	background-color: #fff;
 }
 
 .products .filters {
@@ -609,6 +662,7 @@ footer .inner-content p a {
 	padding-bottom: 10px;
 	margin-bottom: 60px;
 }
+
 
 .products .filters li {
 	text-transform: uppercase;
@@ -653,11 +707,20 @@ footer .inner-content p a {
 .products ul.pages {
 	margin-top: 30px;
 	text-align: center;
+	background-color: #f1f1f1;
+	padding: 10px 0px 10px 0;
+	width: 225px;
+	margin: 0 auto;
+	border-radius: 5px;
+	border: 1px solid #eee;
+
+	
 }
 
 .products ul.pages li {
 	display: inline-block;
 	margin: 0px 2px;
+	background-color: #fff;
 }
 
 .products ul.pages li a {
