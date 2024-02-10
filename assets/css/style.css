@@ -292,7 +292,7 @@ header .navbar {
 } */
 
 #botonSonido{
-	background-image: url(../images/volume-mute-fill.svg);
+	background-image: url(../images/volume-up-fill.svg);
 	left: 42px;
 }
 
