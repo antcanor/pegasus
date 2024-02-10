@@ -7,8 +7,10 @@ const botonPausa = document.querySelector("#botonPausa")
 video.addEventListener('click', function() {
     if (video.paused) {
         video.play();
+        botonPausa.style.backgroundImage="url('assets/images/pause-fill.svg')"
     } else {
         video.pause();
+        botonPausa.style.backgroundImage="url('assets/images/play-fill.svg')"
     }
 });
 
@@ -24,8 +26,10 @@ function toggleMute() {
 function togglePause() {
     if (video.paused) {
         video.play();
+        
     } else {
         video.pause();
+        
     }
 }
 
