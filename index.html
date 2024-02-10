@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
   <head>
 
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="icon" href="assets/images/logof.ico">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
     <title>PEGASUS</title>
@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/owl.css">
 
+    <!-- JAVAsCRIPT-->
+    <script defer type="text/javascript" src="assets/js/control_video.js"></script>
   </head>
 
   <body>
@@ -28,8 +30,7 @@
     <div id="preloader">
         <div class="jumper">
             <div></div>
-            <div></div>
-            <div></div>
+           
         </div>
     </div>  
     <!-- ***** Preloader End ***** -->
@@ -38,63 +39,51 @@
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><img src="assets/images/logof.png" alt="" width="60px"></a>
+          <a class="navbar-brand" href="index.html"><img src="assets/images/logof.png" alt="" width="70px"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home
+                    <a class="nav-link" href="index.html">Inicio
                       <span class="sr-only">(current)</span>
                     </a>
                 </li> 
-
+  
                 <li class="nav-item"><a class="nav-link" href="cars.html">Coches</a></li>
-
+  
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Más</a>
                     
                     <div class="dropdown-menu">
                       <a class="dropdown-item" href="blog.html">Blog</a>
                       <a class="dropdown-item" href="team.html">Equipo</a>
-                      <a class="dropdown-item" href="testimonials.html">Testimonials</a>
-                      <a class="dropdown-item" href="terms.html">Terms</a>
+                      <a class="dropdown-item" href="testimonials.html">Nuestros Clientes</a>
+                      <a class="dropdown-item" href="terms.html">Términos</a>
                     </div>
                 </li>
-
+  
                 <li class="nav-item"><a class="nav-link" href="about-us.html">Sobre Nosotros</a></li>
                 
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contactanos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contáctanos</a></li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+  
 
     <!-- Page Content -->
     <!-- Banner Starts Here -->
-    <div class="banner header-text">
-      <div class="owl-banner owl-carousel">
-        <div class="banner-item-01">
-          <div class="text-content">
-            <h2>Pegasus</h2>
-            <h3>roadster</h3>
-          </div>
-        </div>
-        <div class="banner-item-02">
-          <div class="text-content">
-            <h4>Fugiat Aspernatur</h4>
-            <h2>Laboriosam reprehenderit ducimus</h2>
-          </div>
-        </div>
-        <div class="banner-item-03">
-          <div class="text-content">
-            <h4>Saepe Omnis</h4>
-            <h2>Quaerat suscipit unde minus dicta</h2>
-          </div>
-        </div>
-      </div>
+    <div>
+      <video autoplay loop id="video">
+        <source src="assets/video/pegasus-_online-video-cutter.com_.webm" type="video/webm">
+        <source src="assets/video/pegasusInicio.mp4" type="video/mp4">
+        Tu navegador no soporta este vídeo
+      </video>
+      <span class="control-btn" id="botonSonido" onclick="toggleMute()"></span>
+      <span class="control-btn" id="botonPausa" onclick="togglePause()"></span>
     </div>
     <!-- Banner Ends Here -->
 
@@ -234,14 +223,9 @@
           </div>
           <div class="col-md-6">
             <div class="left-content">
-              <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. Explicabo, esse consequatur alias repellat in excepturi inventore ad <a href="#">asperiores</a> tempora ipsa. Accusantium tenetur voluptate labore aperiam molestiae rerum excepturi minus in pariatur praesentium, corporis, aliquid dicta.</p>
-              <ul class="featured-list">
-                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                <li><a href="#">Consectetur an adipisicing elit</a></li>
-                <li><a href="#">It aquecorporis nulla aspernatur</a></li>
-                <li><a href="#">Corporis, omnis doloremque</a></li>
-              </ul>
-              <a href="about-us.html" class="filled-button">Read More</a>
+              <p>En Pegasus, honramos la rica tradición automotriz mientras abrazamos audazmente la vanguardia de la innovación. Cada modelo que lleva el emblema de Pegasus es una fusión perfecta de artesanía atemporal y tecnología de punta. La elegancia clásica se encuentra con las últimas innovaciones, creando así vehículos que no solo son un placer de conducir, sino también una declaración de estilo y rendimiento.</p>
+              
+              <a href="about-us.html" class="filled-button">Más Sobre Nosotros</a>
             </div>
           </div>
           <div class="col-md-6">
@@ -253,47 +237,47 @@
       </div>
     </div>
 
-    <div class="services" style="background-image: url(assets/images/other-image-fullscren-1-1920x900.jpg);" >
+    <div class="services" style="background-image: url(assets/images/preloader.png);" >
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
               <h2>Blog</h2>
 
-              <a href="blog.html">read more <i class="fa fa-angle-right"></i></a>
+              <a href="blog.html">Echa un vistazo a nuestras entradas <i class="fa fa-angle-right"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6">
             <div class="service-item">
-              <a href="#" class="services-item-image"><img src="assets/images/blog-1-370x270.jpg" class="img-fluid" alt=""></a>
+              <a href="blog-articulos/mantenimiento.html" class="services-item-image"><img src="assets/images/mantenimiento.webp" class="img-fluid" alt=""></a>
 
               <div class="down-content">
-                <h4><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit hic</a></h4>
+                <h4><a href="blog-articulos/mantenimiento.html">Consejos Prácticos para el Mantenimiento de tu Pegasus</a></h4>
 
-                <p style="margin: 0;"> John Doe &nbsp;&nbsp;|&nbsp;&nbsp; 12/06/2020 10:30 &nbsp;&nbsp;|&nbsp;&nbsp; 114</p>
+                <p style="margin: 0;"> Antonio Cano Ruiz &nbsp;&nbsp;|&nbsp;&nbsp; 01/02/2024 22:30 &nbsp;&nbsp;|&nbsp;&nbsp; 114</p>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="service-item">
-              <a href="#" class="services-item-image"><img src="assets/images/blog-2-370x270.jpg" class="img-fluid" alt=""></a>
+              <a href="blog-articulos/airbag.html" class="services-item-image"><img src="assets/images/blog-airbag.webp" class="img-fluid" alt=""></a>
 
               <div class="down-content">
-                <h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h4>
+                <h4><a href="blog-articulos/airbag.html">Innovación en Seguridad Vial: El Avance Notable del Sistema de Airbag de Pegasus</a></h4>
 
-                <p style="margin: 0;"> John Doe &nbsp;&nbsp;|&nbsp;&nbsp; 12/06/2020 10:30 &nbsp;&nbsp;|&nbsp;&nbsp; 114</p>
+                <p style="margin: 0;"> Antonio Cano Ruiz &nbsp;&nbsp;|&nbsp;&nbsp; 31/01/2024 19:40 &nbsp;&nbsp;|&nbsp;&nbsp; 114</p>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="service-item">
-              <a href="#" class="services-item-image"><img src="assets/images/blog-3-370x270.jpg" class="img-fluid" alt=""></a>
+              <a href="blog-articulos/historia.html" class="services-item-image"><img src="assets/images/historia.webp" class="img-fluid" alt=""></a>
 
               <div class="down-content">
-                <h4><a href="#">Aperiam modi voluptatum fuga officiis cumque</a></h4>
+                <h4><a href="blog-articulos/historia.html">Pegasus: Forjando un Legado en el Asfalto Español</a></h4>
 
-                <p style="margin: 0;"> John Doe &nbsp;&nbsp;|&nbsp;&nbsp; 12/06/2020 10:30 &nbsp;&nbsp;|&nbsp;&nbsp; 114</p>
+                <p style="margin: 0;"> Antonio Cano Ruiz &nbsp;&nbsp;|&nbsp;&nbsp; 02/02/2024 13:10 &nbsp;&nbsp;|&nbsp;&nbsp; 114</p>
               </div>
             </div>
           </div>
@@ -314,64 +298,55 @@
           <div class="col-md-12">
             <div class="owl-clients owl-carousel text-center">
               <div class="service-item">
-                <div class="icon">
-                  <i class="fa fa-user"></i>
+                <div class="icon1">
+                  <img src="assets/images/testimonios1.webp" alt="Foto de María">
                 </div>
                 <div class="down-content">
-                  <h4>John Doe</h4>
-                  <p class="n-m"><em>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</em></p>
+                  <h4>María Rodríguez</h4>
+                  <p class="n-m"><em>"Mi experiencia en Pegasus fue excepcional. Desde que entré, el equipo fue amable y profesional. Me asesoraron honestamente, encontré el automóvil perfecto y la compra fue transparente y eficiente. Recomiendo Pegasus a amigos y familiares. Fue una elección acertada."</em></p>
                 </div>
               </div>
               
               <div class="service-item">
-                <div class="icon">
-                  <i class="fa fa-user"></i>
+                <div class="icon1">
+                  <img src="assets/images/testimonios2.webp" alt="Foto de Juan García">
                 </div>
                 <div class="down-content">
-                  <h4>Jane Smith</h4>
-                  <p class="n-m"><em>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</em></p>
+                  <h4>Juan García</h4>
+                  <p class="n-m"><em>"Compré mi último vehículo en Pegasus y estoy encantado. El personal de ventas fue muy conocedor, me ayudaron a encontrar el auto perfecto que se adaptara a mi estilo de vida. La atención postventa ha sido impecable. ¡Pegasus realmente se preocupa por sus clientes! No puedo estar más satisfecho con mi elección."</em></p>
                 </div>
               </div>
               
               <div class="service-item">
-                <div class="icon">
-                  <i class="fa fa-user"></i>
+                <div class="icon1">
+                  <img src="assets/images/testimonios3.jpg" alt="Foto de Laura Gómez">
                 </div>
                 <div class="down-content">
-                  <h4>Antony Davis</h4>
-                  <p class="n-m"><em>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</em></p>
+                  <h4>Laura Gómez</h4>
+                  <p class="n-m"><em>"Me sorprendió lo fácil que fue el proceso de financiamiento en Pegasus. El equipo financiero ofreció opciones asequibles y transparentes. Comprar en Pegasus fue sin complicaciones, y definitivamente volvería para futuras compras. La atención al cliente fue clave en mi decisión, y no me decepcionaron."</em></p>
                 </div>
               </div>
               
               <div class="service-item">
-                <div class="icon">
-                  <i class="fa fa-user"></i>
+                <div class="icon1">
+                  <img src="assets/images/testimonios4.jpg" alt="Foto de Alejandro Pérez">
                 </div>
                 <div class="down-content">
-                  <h4>John Doe</h4>
-                  <p class="n-m"><em>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</em></p>
+                  <h4>Alejandro Pérez</h4>
+                  <p class="n-m"><em>"He sido cliente de Pegasus durante años y siempre me han impresionado con su atención al cliente. Cada visita se siente personalizada, y el personal siempre supera mis expectativas. ¡Pegasus es mi primera opción! La dedicación del equipo realmente marca la diferencia en la experiencia de compra."</em></p>
                 </div>
               </div>
               
               <div class="service-item">
-                <div class="icon">
-                  <i class="fa fa-user"></i>
+                <div class="icon1">
+                  <img src="assets/images/testimonios5.webp" alt="Foto de Marta Fernández">
                 </div>
                 <div class="down-content">
-                  <h4>Jane Smith</h4>
-                  <p class="n-m"><em>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</em></p>
+                  <h4>Marta Fernández</h4>
+                  <p class="n-m"><em>"Me atrajo la amplia variedad de modelos en Pegasus, desde vehículos compactos hasta SUVs de lujo. Los precios son competitivos y encontré el automóvil perfecto para mi presupuesto. Pegasus se destaca por su oferta diversa y asequible. La diversidad de opciones hizo que mi elección fuera más fácil y ajustada a mis necesidades."</em></p>
                 </div>
               </div>
               
-              <div class="service-item">
-                <div class="icon">
-                  <i class="fa fa-user"></i>
-                </div>
-                <div class="down-content">
-                  <h4>Antony Davis</h4>
-                  <p class="n-m"><em>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</em></p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
