@@ -52,3 +52,8 @@ function togglePause() {
       botonPausa.style.backgroundImage="url('assets/images/play-fill.svg')"
     }
   }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var video = document.querySelector('video');
+    video.volume = 0.2; 
+});
