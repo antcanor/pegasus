@@ -314,6 +314,11 @@ header .navbar {
 	background-image: url(../images/pause-fill.svg);
 	
 }
+#botonTexto{
+	background-image: url(../images/badge-cc-fill.svg);
+	left:74px;
+	
+}
 
 .control-btn{
 	position: absolute;
