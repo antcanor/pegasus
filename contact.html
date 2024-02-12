@@ -23,42 +23,51 @@
     <style>
       #form-submit
       {
-        background-color: rgb(56, 187, 56);
+        background-color: #5D9D6F;
+        color: white;
+        border: 3px solid #232323;
       }
       #form-submit:hover
       {
-        background-color: rgb(11, 126, 11);
+        background-color: #457954;
+        color: white;
       }
       #form-reset
       {
-        background-color: rgb(204, 54, 54);
+        background-color: #F23F3F;
+        color: white;
       }
       #form-reset:hover
       {
-        background-color: rgb(158, 27, 27);
+        background-color: #c93434;
+        color: white;
       }
     </style>
 
-<!-- <script>
-  const form = document.getElementById("#contact");
-  const nombre = document.getElementById("#name");
-  const correo = document.getElementById("#email");
-  const asunto = document.getElementById("#subject");
-  const mensaje = document.getElementById("#message");
-  
-  form.action = "mensaje.html"
+<script>
+  // Función para validar correo electrónico
+  function validateEmail(email) {
+    const regex =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+    return regex.test(email);
+  }
 
-  form.addEventListener("submit", function()
-    {
-        if ((nombre = "") && (correo = "") && (asunto = "") && (mensaje = ""))
-            alert("Por favor, rellene todos los campos");
-        else
-        {
-            this.submit()
-        }
+  // Función para manejar la validación cuando se envía el formulario
+  function validateForm(event) {
+    const emailInput = document.getElementById('email');
+    const emailError = document.getElementById('emailError');
 
-    })
-</script> -->
+    if (!validateEmail(emailInput.value)) {
+      emailError.textContent = 'Ingrese un correo electrónico válido';
+      event.preventDefault(); // Evitar que el formulario se envíe si la validación falla
+    } else {
+      emailError.textContent = ''; // Limpiar el mensaje de error si la validación es exitosa
+    }
+  }
+
+  // Agregar un listener para el evento submit del formulario
+  document.getElementById('contact').addEventListener('submit', validateForm);
+</script>
+
   </head>
 
   <body>
@@ -175,22 +184,27 @@
                 <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Nombre y Apellidos" required="">
+                      <label for="name">Nombre y Apellidos</label>
+                      <input name="name" type="text" class="form-control" id="name" required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-12 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="email" type="text" class="form-control" id="email" placeholder="Correo electónico" required="">
+                      <label for="email">Correo Electrónico</label>
+                      <input name="email" type="email" class="form-control" id="email" required="">
+                      <span id="emailError" class="error-message"></span>
                     </fieldset>
                   </div>
                   <div class="col-lg-12 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Asunto" required="">
+                      <label for="subject">Asunto</label>
+                      <input name="subject" type="text" class="form-control" id="subject" required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Tu mensaje" required=""></textarea>
+                      <label for="message">Tu mensaje</label>
+                      <textarea name="message" rows="6" class="form-control" id="message" required=""></textarea>
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
@@ -203,11 +217,10 @@
               </form>
             </div>
           </div>
-          <div class="col-md-4">
-            <img src="assets/images/kevin.jpg" class="img-fluid" alt="">
-
-            <h5 class="text-center" style="margin-top: 15px;">Kevin Castillo</h5>
-          </div>
+        </div>
+      </div>
+    </div>
+          
         </div>
       </div>
     </div>
@@ -217,12 +230,32 @@
         <div class="row">
           <div class="col-md-12">
             <div class="inner-content">
-              <p>Copyright © 2024 Pegasus - Template by: <a href="https://www.phpjabbers.com/">PHPJabbers.com</a></p>
+              <!-- <p>Copyright © 2020 Company Name - Template by: <a href="https://www.phpjabbers.com/">PHPJabbers.com</a></p> -->
+              <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+                <a property="dct:title" rel="cc:attributionURL" href="http://pegasus-car.es">
+                  Pegasus
+                </a> 
+                  by 
+                <span property="cc:attributionName">
+                  Pegasus Team
+                </span> 
+                  is licensed under 
+                <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+                  CC BY-NC-SA 4.0
+                  <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
+                  <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">
+                  <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1">
+                  <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
+                </a> - Template by: <a href="https://www.phpjabbers.com/">
+                  PHPJabbers.com
+                </a> 
+              </p>
             </div>
           </div>
         </div>
       </div>
     </footer>
+
 
 
     <!-- Bootstrap core JavaScript -->
