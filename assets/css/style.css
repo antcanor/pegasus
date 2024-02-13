@@ -121,6 +121,16 @@ a.filled-button:hover {
   color: #fff;
 }
 
+@media only screen and (max-width: 800px) and (max-height: 600px) {
+	#preloader {
+	  background-image: url("../images/preloader-cuatro.png");
+	}
+  }
+  @media only screen and (max-width: 375px) and (max-height: 812px) {
+	#preloader {
+	  background-image: url("../images/preloader-movil.png");
+	}
+  }
 /* #preloader .jumper {
   left: 0;
   top: 0;
@@ -302,6 +312,11 @@ header .navbar {
 
 #botonPausa{
 	background-image: url(../images/pause-fill.svg);
+	
+}
+#botonTexto{
+	background-image: url(../images/badge-cc-fill.svg);
+	left:74px;
 	
 }
 
